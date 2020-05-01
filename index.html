@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>DatingSite</title>
+  </head>
+  <body>
+    <div class="container-fluid formContainer col-md-8">
+      <div class="form-row">
+        <div class="border-left col-md-6 p-3">
+          <h1>About me:</h1>
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-2 mb-3">
+                <label for="validationCustom01">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder="First name"
+                  value="Mark"
+                  required
+                />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom02"
+                  placeholder="Last name"
+                  value="Otto"
+                  required
+                />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustomUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend"
+                      >@</span
+                    >
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    placeholder="Username"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--First row ends here-->
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Gender</label>
+                <select class="form-control" id="preferedGender">
+                  <option>Man</option>
+                  <option>Woman</option>
+                  <option>Trans</option>
+                  <option>Other</option>
+                </select>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Sexuality</label>
+                <select class="form-control" id="preferedGender">
+                  <option>Straight</option>
+                  <option>Gay</option>
+                  <option>Bi</option>
+                  <option>Other</option>
+                </select>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="birthYear">Year of birth</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="getBirthYear"
+                  placeholder="1990"
+                  required
+                />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  placeholder="City"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom04"
+                  placeholder="State"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom05"
+                  placeholder="Zip"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+            </div>
+            <class class="col-md-6">
+              <label>Sexual Knowledge</label>
+              <br />
+              <span class="font-weight-bold indigo-text mr-2 mt-1">0</span>
+              <form class="range-field w-25">
+                <input class="border-0" type="range" min="0" max="100" />
+              </form>
+              <span class="font-weight-bold indigo-text ml-2 mt-1">100</span>
+            </class>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+        </div>
+
+        <!--Right part of the form-->
+        <div class="col-md-6 p-3">
+          <h1>I'm looking for:</h1>
+          <form class="needs-validation" novalidate>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Gender</label>
+                <select class="form-control" id="preferedGender">
+                  <option>Men</option>
+                  <option>Women</option>
+                  <option>Both</option>
+                  <option>Other</option>
+                </select>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md- mb-3 form-inline">
+                <label for="validationCustom02">Age between: </label>
+                <input
+                  type="list"
+                  class="form-control col-md-2"
+                  id="validationCustom02"
+                  placeholder="Last name"
+                  value="18"
+                  required
+                />
+                <span>and</span>
+                <input
+                  type="text"
+                  class="form-control col-md-2"
+                  id="validationCustomUsername"
+                  placeholder="25"
+                  aria-describedby="inputGroupPrepend"
+                  required
+                />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>  
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationCustom03">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom03"
+                  placeholder="City"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom04">State</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom04"
+                  placeholder="State"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationCustom05">Zip</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustom05"
+                  placeholder="Zip"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please provide a valid zip.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
